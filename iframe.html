@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Index</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/default.min.css">
+    <link rel="stylesheet" href="css/monokai_sublime.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+  
+	
+    <style type="text/css">
+    .droppable {
+    	border: 1px dashed black;
+    	height: 30px;
+    	text-align: center;
+    	vertical-align: middle;
+    	font-size: 19px;
+    	background-color: #f0f0f0;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+    .ui-droppable-active {
+        background-color: red;
+    }
+    .ui-droppable-hover {
+        background-color: green;
+    }
+    .child{
+      background-color: yellow;
+      height: 100%;
+    }
+    </style>
+    <div class="container">
+      <div class="row">
+<h2>Hello! I`m iframe with droppable zones and scroll!</h2>
+<div class="droppable">parent zone</div>
+<div>Ipsam optio saepe illum doloremque id itaque ad, beatae dolore voluptate ratione, quisquam, eos. Doloribus, cum sequi assumenda pariatur eligendi, dolore. Sapiente mollitia qui laudantium expedita dolore. Necessitatibus, cupiditate deleniti?</div>
+<div class="droppable">parent zone</div>
+<div class="droppable" style="height: 107px;">
+  <div>parent zone</div>
+  <div class="child">Child zone</div>
+</div>
+<div class="droppable">
+  parent zone
+
+</div>
+<div class="droppable">parent zone</div>
+</div>
+</div>
+  </body>
+  <script>
+   document.addEventListener("mousemove", function(e) {
+   e.preventDefault();
+   console.log("frame mousemove");
+   })
+   </script>
+</html>
